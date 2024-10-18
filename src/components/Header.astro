@@ -1,7 +1,15 @@
-<header class="flex flex-col text-center mt-4 md:flex-row justify-between mx-4">
-    <h1 class="text-2xl font-extrabold md:text-3xl">Namuncurá</h1>
-    <nav class="no-underline text-lg mt-3 flex justify-around md:text-xl">
-        <a href="#Prductos" class="mx-2">Productos</a>
-        <a href="#Contacto">Contacto</a>
+---
+import { Image } from "astro:assets";
+import LogoImage from '../images/logo-namuncura.webp';
+---
+
+<header class="w-full h-1/4 py-4 bg-primary text-secondary flex md:flex-row justify-between align-middle items-center">
+    <div class="flex md:items-center">
+        <Image src={LogoImage} alt="Namuncura Logo" width={75} height={75}/>
+        <h1 class="mx-3 text-2xl font-extrabold md:text-3xl">Namuncurá</h1>
+    </div>
+    <nav class="no-underline text-lg font-bold mx-3 md:text-xl">
+        <a href="#Prductos" class="mx-1">Productos</a>
+        <a href="#Contacto" class="mx-1">Contacto</a>
     </nav>
 </header>
