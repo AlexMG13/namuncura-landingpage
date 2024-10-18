@@ -1,10 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
+import Products from '../components/Products.astro';
 ---
 
 <Layout title="Namuncurá">
 	<main>
-		<Hero />
+		<section>
+			<Header />
+		</section>
+		<section class="py-20">
+			<Hero />
+		</section>
+		<section id="Productos">
+			<Products />
+		</section>
 	</main>
 </Layout>
